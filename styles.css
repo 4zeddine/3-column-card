@@ -1,0 +1,126 @@
+:root{
+  --orange:hsl(31, 77%, 52%);
+  --cyan:hsl(184, 100%, 22%);
+  --darkcyan:hsl(179, 100%, 13%);
+  --transparentWhite:hsla(0, 0%, 100%, 0.75);
+  --lightGrey:hsl(0, 0%, 95%);
+}
+
+
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  background-color: var(--lightGrey);
+  color: #fff;
+}
+/* Main section style */
+
+main{
+  margin:10.625rem auto;
+  max-width: 57.25rem;
+  border-radius: 0.5rem;
+  display: flex;
+  overflow: hidden;
+}
+
+/* all the sections styles */
+
+.section{
+  padding: 3rem;
+}
+
+/* section's headers styles */
+
+.section h2{
+  margin: 2.625rem 0;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.438rem;
+  text-transform: uppercase;
+}
+
+/* section's paragraphs styles */
+
+.section p{
+  line-height: 1.538rem;
+  letter-spacing: -3%;
+  margin-bottom: 5.625rem;
+  margin-top: 0;
+}
+
+/* section's buttons styles */
+
+.section button{
+  border: solid #fff 1px;
+  border-radius: 5rem;
+  color: #fff;
+  background-color: transparent;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+}
+.section button:focus{
+background-color: #fff;
+}
+/* sedans section style */
+
+.sedans{
+background-color: var(--orange);
+}
+.sedans button:focus{
+  background-color: #fff;
+  color: var(--orange);
+  }
+/* suvs section style */
+
+.suvs{
+  background-color: var(--cyan);
+}
+.suvs button:focus{
+  background-color: #fff;
+  color: var(--cyan);
+  }
+/* luxury section style */
+
+.luxury{
+  background-color: var(--darkcyan);
+}
+.luxury button:focus{
+  background-color: #fff;
+  color: var(--darkcyan);
+  }
+
+
+/* Media querries */
+
+@media (max-width:1110px) {
+  main{
+    margin: 5.5rem auto;
+    flex-direction: column;
+    max-width: 80%;
+  }
+  .section h2{
+    margin: 2.625rem 0;
+  }
+  .section p{
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width:375px) {
+  main{
+    margin: 5.5rem 2rem;
+    max-width: 80%;
+  }
+  .section p{
+    margin-bottom: 1.875rem;
+  }
+}
